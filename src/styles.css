@@ -52,17 +52,24 @@ button:active:not(.active) {
 
 #content > div {
   border-radius: 10px 0px 10px 10px;
+  background-color: rgb(20,20,150,0.2 );
+  margin-left: 5vw;
+  padding: 20px;
+  height: 90vh;
+}
+
+h1 {
+  color: white;
 }
 
 .home-page {
-    background-color: rgb(20,20,150,0.2 );
     margin-right: 207.5px;
-    margin-left: 5vw;
-    padding: 20px;
-    height: 90vh;
-
-    & h1 {
-      color: white;
-    }
 }
 
+.menu-page {
+  margin-right: 115px;
+}
+
+.about-page {
+  margin-right: 20px;
+}

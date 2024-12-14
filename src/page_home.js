@@ -1,6 +1,6 @@
 const content = document.querySelector('#content');
 
-function makeHomePage(){
+function createHomeContent(){
   const homeElement = document.createElement('div');
   homeElement.classList.add('home-page');
 
@@ -11,4 +11,4 @@ function makeHomePage(){
   content.appendChild(homeElement);
 }
 
-export { makeHomePage }
+export { createHomeContent }

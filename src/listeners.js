@@ -1,3 +1,5 @@
+import { renderNewPage } from "./screenUpdater";
+
 const homeBtn = document.querySelector('#home');
 const menuBtn = document.querySelector('#menu');
 const aboutBtn = document.querySelector('#about');
@@ -8,6 +10,7 @@ function listenersInit(){
     btn.addEventListener('click', event => {
       allBtns.forEach(btn => btn.classList.remove('active'));
       btn.classList.add('active');
+      renderNewPage(btn.id);
     })
   })
 }

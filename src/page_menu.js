@@ -1,6 +1,6 @@
 const content = document.querySelector('#content');
 
-function createMenuLayout(){
+function createMenuContent(){
   const menuElement = document.createElement('div');
   menuElement.classList.add('menu-page');
 
@@ -11,4 +11,4 @@ function createMenuLayout(){
   content.appendChild(menuElement);
 }
 
-export { createMenuLayout }
+export { createMenuContent }
