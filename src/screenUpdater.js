@@ -1,6 +1,7 @@
 import { createHomeContent } from "./page_home";
 import { createMenuContent } from "./page_menu";
 import { createAboutContent } from "./page_about";
+import { createReviewContent } from "./page_reviews";
 
 
 const content = document.querySelector('#content');
@@ -19,6 +20,9 @@ export const renderNewPage = function(btnID){
       break;
     case 'about':
       createAboutContent();
+      break;
+    case 'reviews':
+      createReviewContent();
       break;
     default:
       throw Error('Fatal error occured');
