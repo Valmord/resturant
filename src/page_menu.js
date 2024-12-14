@@ -20,14 +20,14 @@ function createMenuElements(){
       const foodName = document.createElement('h4');
       const foodDesc = document.createElement('p');
       const foodPrice = document.createElement('p');
-      const strongtag = document.createElement('strong');
+      const emTag = document.createElement('em');
       foodName.textContent = item.name;
       foodDesc.textContent = item.description;
-      strongtag.textContent = `$${item.price.toFixed(2)}`;
+      emTag.textContent = `$${item.price.toFixed(2)}`;
 
       listElement.appendChild(foodName);
       listElement.appendChild(foodDesc);
-      foodPrice.appendChild(strongtag);
+      foodPrice.appendChild(emTag);
       listElement.appendChild(foodPrice);
       listContainer.appendChild(listElement);
     })

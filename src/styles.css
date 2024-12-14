@@ -86,7 +86,7 @@ h1 {
   margin-left: auto;
 }
 
-strong {
+em {
   font-style: italic;
   color: greenyellow;
 }
@@ -121,5 +121,22 @@ h3 {
 
   & p {
     color: white;
+  }
+}
+
+
+.about-header {
+  margin-bottom: 20px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.about-page .section {
+  margin-bottom: 15px;
+
+  & ul {
+    padding-left: 40px;
   }
 }
