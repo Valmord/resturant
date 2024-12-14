@@ -4,19 +4,16 @@
   box-sizing: border-box;
 }
 
-body:not(#menu.active) {
+body {
+  background-color: #266fe0;
   background-image: linear-gradient(#7ff3d8, #266fe0);
-  /* background-repeat: ; */
-  height: 100%;
-  /* background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
-  background-position: 0px -100px; */
+  height: min(100vh, fit-content);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
 } 
 
 header {
   height: 50px;
-  /* background-color: rgb(20,20,150,0.2 ); */
   position: relative;
 }
 
@@ -57,25 +54,31 @@ button:active:not(.active) {
   background-color: rgb(20,20,150,0.2 );
   margin-left: 5vw;
   padding: 20px;
-  height: max(90vh,fit-content);
+  /* height: max(90vh,fit-content); */
+  margin-bottom: 20px;
 }
 
 h1 {
-  color: white;
+  color: black;
 }
 
 .home-page {
-    margin-right: 207.5px;
+    margin-right: 20px;
+    background-image: url('./images/background.jpg');
+    height: max(95vh, 200px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 0px 20px; */
 }
 
 .menu-page {
-  margin-right: 115px;
+  margin-right: 117px;
   display: flex;
   flex-direction: column;
 }
 
 .about-page {
-  margin-right: 20px;
+  margin-right: 209.5px;
 }
 
 .menu-img {
@@ -85,12 +88,18 @@ h1 {
 
 strong {
   font-style: italic;
+  color: greenyellow;
 }
 
 .menu-items {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+h2 {
+  font-size: 26px;
+  color: white;
 }
 
 h3 {

@@ -32,6 +32,7 @@ function createMenuElements(){
       listContainer.appendChild(listElement);
     })
     sectionElement.appendChild(listContainer);
+    sectionElement.appendChild(document.createElement('hr'));
     menuContainer.appendChild(sectionElement);
   }
   return menuContainer;
