@@ -147,4 +147,17 @@ h3 {
 
 .review-item {
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-item img {
+  height: 300px;
+}
+
+.review-content {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 30px;
+  margin-top: 20px;
 }
