@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
-  background-image: url('./images/background.jpg');
+body:not(#menu.active) {
+  background-image: linear-gradient(#7ff3d8, #266fe0);
+  /* background-repeat: ; */
+  height: 100%;
+  /* background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
-  background-position: 0px -100px;
+  background-position: 0px -100px; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
 } 
 
@@ -55,7 +57,7 @@ button:active:not(.active) {
   background-color: rgb(20,20,150,0.2 );
   margin-left: 5vw;
   padding: 20px;
-  height: 90vh;
+  height: max(90vh,fit-content);
 }
 
 h1 {
@@ -68,8 +70,47 @@ h1 {
 
 .menu-page {
   margin-right: 115px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-page {
   margin-right: 20px;
+}
+
+.menu-img {
+  height: 100%;
+  margin-left: auto;
+}
+
+strong {
+  font-style: italic;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+.menu-page ul {
+  list-style: none;
+  font-size: 16px;
+
+  & h4 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  & li {
+    margin-bottom: 10px;
+  }
+
+  & p {
+    color: white;
+  }
 }
